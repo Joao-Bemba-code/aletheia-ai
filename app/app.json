@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Aletheia AI",
+    "slug": "aletheia-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "aletheia",
+    "splash": {
+      "backgroundColor": "#0B0C10"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ai.aletheia.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "A Aletheia AI usa a camera para analise facial durante auditorias comportamentais.",
+        "NSMicrophoneUsageDescription": "A Aletheia AI usa o microfone para analise de tom de voz e paralinguistica.",
+        "NSSpeechRecognitionUsageDescription": "A Aletheia AI usa reconhecimento de fala para transcrever interacoes."
+      }
+    },
+    "android": {
+      "package": "ai.aletheia.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-audio",
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "A Aletheia AI precisa de acesso a camera para analise biometrica em tempo real.",
+          "microphonePermissionText": "A Aletheia AI precisa de acesso ao microfone para analise vocal em tempo real."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "A Aletheia AI usa a camera para analise facial em auditorias comportamentais."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "emotion_accuracy": 1.0,
+  "incongruence_accuracy": 0.6816666666666666,
+  "n_samples": 3000,
+  "facial_features": 128,
+  "audio_features": 128,
+  "text_features": 128,
+  "total_features": 384,
+  "emotion_labels": [
+    "neutral",
+    "calm",
+    "happy",
+    "sad",
+    "angry",
+    "fearful",
+    "disgust",
+    "surprised"
+  ],
+  "feature_importance_emotion": {
+    "feature_0": 0.0705612376332283,
+    "feature_1": 0.004279402084648609,
+    "feature_2": 0.003727453062310815,
+    "feature_3": 0.0022773395758122206,
+    "feature_4": 0.004924501292407513,
+    "feature_5": 0.028438769280910492,
+    "feature_6": 0.03966449573636055,
+    "feature_7": 0.003259932855144143,
+    "feature_8": 0.0022072256542742252,
+    "feature_9": 0.0044503468088805676,
+    "feature_10": 0.0038366157095879316,
+    "feature_11": 0.005065162666141987,
+    "feature_12": 0.007750772405415773,
+    "feature_13": 0.005183746572583914,
+    "feature_14": 0.00017171178478747606,
+    "feature_15": 0.0010829259408637881,
+    "feature_16": 0.0004369347880128771,
+    "feature_17": 0.0011571442009881139,
+    "feature_18": 0.0020425720140337944,
+    "feature_19": 0.00011260609608143568
+  }
+}
